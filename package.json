@@ -1,0 +1,25 @@
+{
+  "name": "km-syntax-highlighter",
+  "displayName": "km-syntax-highlighter",
+  "description": "support for kminus",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "kminus",
+      "aliases": ["kminus", "kminus"],
+      "extensions": [".k-"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "kminus",
+      "scopeName": "source.kminus",
+      "path": "./syntaxes/kminus.tmLanguage.json"
+    }]
+  }
+}
