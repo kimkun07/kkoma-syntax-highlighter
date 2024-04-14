@@ -2,6 +2,10 @@
   "name": "kkoma-syntax-highlighter",
   "displayName": "kkoma-syntax-highlighter",
   "description": "support for kkoma",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kimkun07/kkoma-syntax-highlighter.git"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.88.0"
@@ -10,16 +14,26 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "kkoma",
-      "aliases": ["kkoma"],
-      "extensions": [".k--", ".k-"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "kkoma",
-      "scopeName": "source.kkoma",
-      "path": "./syntaxes/kkoma.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "kkoma",
+        "aliases": [
+          "kkoma"
+        ],
+        "extensions": [
+          ".k--",
+          ".k-",
+          ".k"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "kkoma",
+        "scopeName": "source.kkoma",
+        "path": "./syntaxes/kkoma.tmLanguage.json"
+      }
+    ]
   }
 }
