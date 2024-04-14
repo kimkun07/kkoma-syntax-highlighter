@@ -3,6 +3,9 @@
   "name": "kminus",
   "patterns": [
     {
+      "include": "#comments"
+    },
+    {
       "include": "#keywords"
     },
     {
@@ -16,6 +19,26 @@
     }
   ],
   "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "comment": "empty comment",
+          "name": "comment.block",
+          "match": "\\(\\*\\*\\)"
+        },
+        {
+          "comment": "block comment",
+          "name": "comment.block",
+          "begin": "\\(\\*",
+          "end": "\\*\\)",
+          "patterns": [
+            {
+              "include": "#comments"
+            }
+          ]
+        }
+      ]
+    },
     "keywords": {
       "patterns": [
         {

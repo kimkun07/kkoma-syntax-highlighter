@@ -1,8 +1,11 @@
 # Hello
 // Hello
 
+(**)
 
-(* Public test case 1 *)
+(* Public
+ test cas (* *)
+ e 1 *)
 
 if a
   hi
