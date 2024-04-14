@@ -1,7 +1,7 @@
 {
-  "name": "km-syntax-highlighter",
-  "displayName": "km-syntax-highlighter",
-  "description": "support for kminus",
+  "name": "kkoma-syntax-highlighter",
+  "displayName": "kkoma-syntax-highlighter",
+  "description": "support for kkoma",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.88.0"
@@ -11,15 +11,15 @@
   ],
   "contributes": {
     "languages": [{
-      "id": "kminus",
-      "aliases": ["kminus", "kminus"],
-      "extensions": [".k-"],
+      "id": "kkoma",
+      "aliases": ["kkoma"],
+      "extensions": [".k--", ".k-"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "kminus",
-      "scopeName": "source.kminus",
-      "path": "./syntaxes/kminus.tmLanguage.json"
+      "language": "kkoma",
+      "scopeName": "source.kkoma",
+      "path": "./syntaxes/kkoma.tmLanguage.json"
     }]
   }
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "kminus",
+  "name": "kkoma",
   "patterns": [
     {
       "include": "#comments"
@@ -42,11 +42,11 @@
     "keywords": {
       "patterns": [
         {
-          "name": "keyword.control.kminus",
+          "name": "keyword.control",
           "match": "\\b(if|then|else|for|while|do)\\b"
         },
         {
-          "name": "keyword.control.kminus",
+          "name": "keyword.control",
           "match": "\\b(let|proc|in|read|write|end|to)\\b"
         }
       ]
@@ -80,5 +80,5 @@
       ]
     }
   },
-  "scopeName": "source.kminus"
+  "scopeName": "source.kkoma"
 }
