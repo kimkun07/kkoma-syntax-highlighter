@@ -32,7 +32,11 @@
       "patterns": [
         {
           "name": "constant.language",
-          "match": "\\b(unit|true|false)"
+          "match": "\\b(unit|true|false)\\b"
+        },
+        {
+          "name": "constant.numeric",
+          "match": "-?\\d+"
         }
       ]
     },
@@ -45,6 +49,10 @@
         {
           "name": "keyword.operator",
           "match": ":="
+        },
+        {
+          "name": "keyword.operator",
+          "match": "(\\+|-|\\*|/|<|>|=|;)"
         }
       ]
     }
