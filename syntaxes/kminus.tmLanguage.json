@@ -1,32 +1,53 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "kminus",
-	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.kminus",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.kminus",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.kminus",
-					"match": "\\\\."
-				}
-			]
-		}
-	},
-	"scopeName": "source.kminus"
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "kminus",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#literals"
+    },
+    {
+      "include": "#todos"
+    },
+    {
+      "include": "#operators"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.kminus",
+          "match": "\\b(if|then|else|for|while|do)\\b"
+        },
+        {
+          "name": "keyword.control.kminus",
+          "match": "\\b(let|proc|in|read|write|end|to)\\b"
+        }
+      ]
+    },
+    "literals": {
+      "patterns": [
+        {
+          "name": "constant.language",
+          "match": "\\b(unit|true|false)"
+        }
+      ]
+    },
+    "todos": {
+      "name": "comment.line",
+      "match": "\\b(TODO|FIXME|NOTE|XXX|contained)\\b"
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator",
+          "match": ":="
+        }
+      ]
+    }
+  },
+  "scopeName": "source.kminus"
 }
