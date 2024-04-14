@@ -25,5 +25,11 @@
     ["(", ")"],
     ["\"", "\""],
     ["'", "'"]
-  ]
+  ],
+  "indentationRules": {
+    // 100% Copied from https://github.com/ocamllabs/vscode-ocaml-platform/blob/master/languages/ocaml.json
+    "decreaseIndentPattern": "^\\s*(end|done|with|in|else)\\b|^\\s*;;",
+    "increaseIndentPattern": "\\b(begin|object)\\s*$|\\b(let|and)([$&*+\\-/=>@^|<][!?$&*+\\-/=>@^|%:]*)? [a-zA-Z0-9'_-]+( [^ ]+)* =\\s*$|method!?[ \\t]+.*=[ \\t]*$|->[ \\t]*$|\\b(for|while)(_lwt)?[ \\t]+.*[ \\t]+do[ \\t]*$|(\\btry(_lwt)?$|\\bif\\s+.*\\sthen$|\\belse|[:=]\\s*sig|=\\s*struct)\\s*$",
+    "indentNextLinePattern": "(?!\\bif.*then.*(else.*|(;|[ \\t]in)[ \\t]*$))\\bif|\\bthen[ \\t]*$|\\belse[ \\t]*$$"
+  }
 }
