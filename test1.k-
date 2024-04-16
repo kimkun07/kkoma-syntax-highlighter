@@ -1,14 +1,17 @@
-# Hello
-// Hello
-
 (**)
 
 (* Public
  test cas (* *)
  e 1 *)
 
-if a
-  hi
+if not a / 3
+  n_3;
+  n5;
+  5 + 3;
+  5 -3;
+  5 - -3;
+  3 / 5;
+  3 * 5;
 
 let y := 2 in
 write x + y

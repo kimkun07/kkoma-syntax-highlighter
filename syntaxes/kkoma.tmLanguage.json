@@ -43,11 +43,11 @@
       "patterns": [
         {
           "name": "keyword.control",
-          "match": "\\b(if|then|else|for|while|do)\\b"
+          "match": "\\b(if|then|else|while|do|for|to)\\b"
         },
         {
-          "name": "keyword.control",
-          "match": "\\b(let|proc|in|read|write|end|to)\\b"
+          "name": "keyword.other",
+          "match": "\\b(let|in|end|proc|read|write)\\b"
         }
       ]
     },
@@ -59,7 +59,7 @@
         },
         {
           "name": "constant.numeric",
-          "match": "-?\\d+"
+          "match": "\\b\\d+"
         }
       ]
     },
@@ -70,12 +70,16 @@
     "operators": {
       "patterns": [
         {
-          "name": "keyword.operator",
-          "match": ":="
+          "name": "keyword.other",
+          "match": "(:=|;)"
         },
         {
-          "name": "keyword.operator",
-          "match": "(\\+|-|\\*|/|<|>|=|;)"
+          "name": "keyword.operator.arithmetic",
+          "match": "(\\+|-|\\*|\\/)"
+        },
+        {
+          "name": "keyword.operator.conditional",
+          "match": "(<|=|\\bnot\\b)"
         }
       ]
     }
